@@ -52,3 +52,7 @@ a {
     color: $color-accent;
   }
 }
+
+.back2top {
+  @extend %back2top;
+}

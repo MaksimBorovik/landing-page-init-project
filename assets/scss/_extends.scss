@@ -45,7 +45,7 @@
 
 %section-description {
   text-align: center;
-  
+
   @include md-min {
     margin-bottom: $gap * 3;
   }
@@ -113,6 +113,37 @@
           bottom: 4px;
         }
       }
+    }
+  }
+}
+
+%back2top {
+  position: fixed;
+  right: $gap;
+  bottom: $gap;
+  display: none;
+  width: $gap * 3;
+  height: $gap * 3;
+  transition: opacity 0.3s;
+  opacity: 0.2;
+  background-color: $color-dark;
+  border-radius: 4px;
+
+  i {
+    position: relative;
+    top: $gap;
+    margin: 0;
+    transition: top 0.3s;
+    color: $color-light;
+    font-size: 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    i {
+      top: 5px;
     }
   }
 }
