@@ -54,6 +54,40 @@ h2, h3, h4, h5, h6 {
   transition: bottom 0.5s, opacity 0.5s;
 }
 
+.back2top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 45px;
+  height: 45px;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.2;
+  background-color: #010101;
+  border-radius: 4px;
+}
+
+.back2top i {
+  position: relative;
+  top: 15px;
+  margin: 0;
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+  color: #fefefe;
+  font-size: 1rem;
+}
+
+.back2top:hover, .back2top:focus {
+  opacity: 1;
+}
+
+.back2top:hover i, .back2top:focus i {
+  top: 5px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
@@ -360,6 +394,60 @@ a:hover, a:focus {
 
 .advantage-item__caption {
   margin-bottom: 15px;
+}
+
+.footer {
+  font-size: 0.875rem;
+}
+
+.footer h3 {
+  color: #cbcbcb;
+}
+
+.footer h3::first-letter {
+  color: #ee3b24;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.footer li {
+  position: relative;
+}
+
+.footer li::before {
+  position: absolute;
+  margin-left: -30px;
+  content: "\f30b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #b2b2b2;
+}
+
+.footer p {
+  color: #b2b2b2;
+}
+
+.footer a {
+  color: #b2b2b2;
+}
+
+.footer a:hover, .footer a:focus {
+  color: #fefefe;
+}
+
+.footer__top {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  background-color: #282828;
+}
+
+.footer__bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #343434;
 }
 
 @media (min-width: 576px) {
