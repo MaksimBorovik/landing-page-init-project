@@ -1,2 +1,2 @@
 **Check out the result on page:**
-https://maksimborovik.github.io/landing-page-init-project/
+https://mirrorimage7.github.io/landing-page-init-project/
